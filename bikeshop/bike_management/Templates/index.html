@@ -1,0 +1,436 @@
+{% load static %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css-master/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+    <link href="{%static 'js/css/hover-min.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="{%static 'js/jquery-1.9.1.min.js'%}"></script>
+    <script src="{%static 'js/jquery.elevatezoom.js'%}"></script>
+    <script src="{%static 'js/jquery.scrollto.js'%}"></script>
+
+  	<script src="{%static 'js/modernizr.js'%}"></script> <!-- Modernizr -->
+    <script src="{%static 'js/main.js'%}"></script> <!-- Gem jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Optional theme -->
+    <link href="{%static 'css/ihover.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/grayscale.css'%}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+
+<style media="screen">
+#header{
+      min-height: 150%;
+      color: #507099;
+}
+
+#shop{
+      background-color:#181b25;
+      min-height: 100%;
+      padding-top: 100px;
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      margin-top: -35px;
+}
+#contact{
+    background-color: #cccccc;
+      min-height: 100%;
+      padding-top: 70px;
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 70px;
+}
+
+#blog{
+      background-color:#181b25;
+      min-height: 100%;
+      padding-top: 65px;
+      padding-bottom: 65px;
+}
+
+
+.ol:hover{
+      color: #B99867;
+}
+
+  </style>
+
+  <body>
+          <!--<section id ="header">-->
+            <!--<h1  class="header"><img class="img-responsive" src="pic/logo.png"></h1>-->
+            <!--<div class="slideshow">-->
+              <!--<div class="slideshow-image" style="background-image: url('pic/slide1.jpg');background-attachment: fixed "></div>-->
+              <!--<div class="slideshow-image" style="background-image: url('pic/slide2.jpg');background-attachment: fixed "></div>-->
+              <!--<div class="slideshow-image" style="background-image: url('pic/slide3.jpg');background-attachment: fixed "></div>-->
+              <!--<div class="slideshow-image" style="background-image: url('pic/slide4.jpg');background-attachment: fixed"></div>-->
+            <!--</div>-->
+          <!--</section>-->
+
+         <section id="shop" style="padding-bottom:70px;">
+           <div class="bg-light-gray">
+               <center><b><h1><a class="" href="../category/1"  style="text-align:center; font-family: 'Electrolize', sans-serif; font-size:80px; color: #fbf9fa " class="st1">Horror</a></h1></b></center>
+               <div class="container">
+                 <div class="row"style="margin-top:100px;"><center>
+                    <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                       <div>
+                          <div><img src="{% static '1.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div></div>
+                          <div></div>
+                          <div>
+                             <h3>STEPHEN KING (IT)</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div>
+                           <div><img src="{% static '2.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                           <div></div>
+                           <div></div>
+                           <div>
+                              <h3>STEPHEN KING (THE SHINING)</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div>
+                           <div><img src="{% static '3.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                           <div></div>
+                           <div></div>
+                           <div>
+                              <h3>THE JUMBIES</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                      </div>
+                 </div></center>
+                 </br>
+                 <div class="row "><center>
+                      <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div>
+                          <div><img src="{% static '4.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div></div>
+                          <div></div>
+                          <div>
+                              <h3>THE REPLACEMENT</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div>
+                          <div><img src="{% static '5.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div></div>
+                          <div></div>
+                          <div>
+                              <h3>WOLFSBANE</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div>
+                          <div><img src="{% static '6.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div></div>
+                          <div></div>
+                          <div>
+                              <h3>NEIL GAIMAN</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                  </div></center>
+               </div>
+            </div>
+         </section>
+
+         <section id="contact">
+          <div  class="bg-light-gray">
+               <center><b><h1><a class="" href="../romance"  style="text-align:center; font-family: 'Electrolize', sans-serif; font-size:80px; color: #fbf9fa " class="st1">romance</a></h1></b></center>
+             <div class="container">
+                 <div class="row"style="margin-top:100px;"><center>
+                    <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                       <div>
+                          <div><img src="{% static '2.1.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div></div>
+                          <div></div>
+                          <div>
+                             <h3>FORBIDDEN</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div>
+                           <div><img src="{% static '2.2.JPG' %}" style="height: 400px; width: 261px;"/></div>
+                           <div></div>
+                           <div></div>
+                           <div>
+                              <h3>LENORA BELL</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div>
+                           <div><img src="{% static '2.3.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                           <div></div>
+                           <div></div>
+                           <div class="info">
+                              <h3>LEEANNA MORGAN</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                      </div>
+                 </div></center>
+                 </br>
+                 <div class="row "><center>
+                      <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '2.4.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>NEW MOON</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '2.5.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>CITY OF LOST SOULS</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '2.6.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>HER WESTERN HEART</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                  </div></center>
+               </div>
+            </div>
+         </section>
+
+
+         <section id="blog">
+          <div  class="bg-light-gray">
+               <center><b><h1><a class="" href="../mystery"  style="text-align:center; font-family: 'Electrolize', sans-serif; font-size:80px; color: #fbf9fa " class="st1">mystery</a></h1></b></center>
+              <div class="container">
+                 <div class="row"style="margin-top:100px;"><center>
+                    <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                       <div class="">
+                          <div class=""><img src="{% static '3.1.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                             <h3>MYSTERY ROOM</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div class="">
+                           <div class=""><img src="{% static '3.2.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                           <div class=""></div>
+                           <div class=""></div>
+                           <div class="">
+                              <h3>BOOK TO DIE FOR</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                     </div>
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                        <div class="">
+                           <div class=""><img src="{% static '3.3.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                           <div class=""></div>
+                           <div class=""></div>
+                           <div class="">
+                              <h3>THE DAVINCI CODE</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                           </div></a></div>
+                      </div>
+                 </div></center>
+                 </br>
+                 <div class="row "><center>
+                      <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '3.4.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>THE GIRL ON THE TRAIN</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '3.5.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>THE READY MADE THIEF</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                       <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+                          <div class="">
+                          <div class=""><img src="{% static '3.6.jpg' %}" style="height: 400px; width: 261px;"/></div>
+                          <div class=""></div>
+                          <div class=""></div>
+                          <div class="">
+                              <h3>MELIA RIDGE</h3>
+                             <p style="color: #fff4f9">VIEW MORE</p>
+                          </div></a></div>
+                       </div>
+                  </div></center>
+               </div>
+            </div>
+          </section>
+
+       <script>
+
+$(document).ready(function(){
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+         if (scroll >=470&&scroll<1400) {
+           $('.st1').show();
+             $('.st1').addClass('animated fadeInLeft');
+
+
+       }
+       else {
+
+             $('.st1').removeClass('animated fadeInLeft');
+
+       }
+
+
+
+      });
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+         if (scroll >=1200&&scroll<2000) {
+           $('.st2').show();
+             $('.st2').addClass('animated fadeInLeft');
+
+
+       }
+       else {
+
+             $('.st2').removeClass('animated fadeInLeft');
+       }
+      });
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+         if (scroll >=2400&&scroll<3400) {
+           $('.st3').show();
+             $('.st3').addClass('animated fadeInLeft');
+
+
+       }
+       else {
+
+             $('.st3').removeClass('animated fadeInLeft');
+
+       }
+      });
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+         if (scroll >=4400) {
+           $('.st4').show();
+             $('.st4').addClass('animated fadeInUpBig');
+
+
+       }
+       else {
+
+             $('.st4').removeClass('animated fadeInUpBig');
+
+       }
+      });
+
+
+
+  function collapseNavbar() {
+        if ($(".navbar").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+        /**
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the
+         * page is scrolled/
+         */
+        $(window).scroll(function(){
+            var window_top = $(window).scrollTop() + 12; // the "12" should equal the margin-top value for nav.stick
+            var div_top = $('#nav-anchor').offset().top;
+                if (window_top > div_top) {
+                    $('nav').addClass('stick');
+                } else {
+                    $('nav').removeClass('stick');
+                }
+        });
+
+
+        /**
+         * This part causes smooth scrolling using scrollto.js
+         * We target all a tags inside the nav, and apply the scrollto.js to it.
+         */
+        $("nav a").click(function(evn){
+            evn.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash);
+        });
+
+
+
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again, some array creation and
+         * manipulation, class adding and class removing, and conditional testing
+         */
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i=0; i < aChildren.length; i++) {
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
+
+        $(window).scroll(function(){
+            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
+
+            for (var i=0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").addClass("nav-active");
+                } else {
+                    $("a[href='" + theID + "']").removeClass("nav-active");
+                }
+            }
+
+            if(windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").hasClass("nav-active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                    $("nav li:last-child a").addClass("nav-active");
+                }
+            }
+        });
+        $("#zoom_01").elevateZoom({
+          zoomType				: "inner",
+          cursor: "crosshair"
+        });
+    });
+</script>
