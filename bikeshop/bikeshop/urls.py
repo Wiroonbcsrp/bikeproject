@@ -19,9 +19,16 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
+from rest_framework import routers
+from bike_management.viewset import BookView
+
+router = routers.DefaultRouter()
+router.register(r'book', BookView)
 urlpatterns = [
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='home'),
+    # url(r'^$', views.index, name='home'),
     url(r'^add/', views.add_book, name='add_book'),
     path('category/<int:category_id>/', views.cat, name = 'product_category'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
