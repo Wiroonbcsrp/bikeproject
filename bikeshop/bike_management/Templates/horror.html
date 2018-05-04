@@ -1,25 +1,42 @@
 {% include 'navigation.html' %}
 
-{% for Book in  book_num %}
- <section id="blog">
+        <section id="blog">
           <div  class="bg-light-gray">
-              <!--<b><h1 style="text-align:center; font-family: 'Electrolize', sans-serif; font-size:50px; color: #fbf9fa" class="st1"><b>Mystery</b></h1></b>-->
+              <!--<b><h1 style="text-align:center; font-family: 'Electrolize', sans-serif; font-size:50px; color: black" class="st1"><b>{{Book.category}}</b></h1></b>-->
               <div class="container">
                  <div class="row"style="margin-top:100px;"><center>
-                    <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01' >
+
+                   {% for Book in  book_num %}
+                     <div class='col-sm-12 col-md-4' class='btn btn-primary' data-toggle='modal' data-target='#ex01'>
                        <div class="">
                           <div class=""><img src="{{Book.images.url}}" style="height: 400px; width: 261px;"/></div>
-                          <div class=""></div>
-                          <div class=""></div>
+                          <!--<div class=""></div>-->
+                          <!--<div class=""></div>-->
                           <div class="">
-                             <h3>{{Book.name}}</h3>
-                             <p style="color: #fff4f9">{{Book.category}}</p>
-                          </div></a></div>
+                             <h4>{{Book.name}}</h4>
+                             <!--<p style="color: #fff4f9">{{Book.category}}</p>-->
+                          </div>
+                       </div>
                      </div>
-                 </div></center>
-                 </br>
+                 {% endfor %}
 
-               </div>
-            </div>
-          </section>
-{% endfor %}
+                 </div></center>
+                  <center>
+                    <div class="form-group">
+                        <label>Input Name</label>
+                        <input class="form-control" placeholder="Name" style="width: 250px">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Input Detail</label>
+                        <input class="form-control" placeholder="Detail" style="width: 250px">
+                    </div>
+                      <button type="submit" class="btn btn-default1 btn-lg btn-block" style="width: 250px">submit</button>
+                  </center>
+              </div>
+          </div>
+        </section>
+
+
+
+
