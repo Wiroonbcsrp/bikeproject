@@ -1,0 +1,12 @@
+<div class="fieldWrapper">
+    {{ form.subject.errors }}
+    {{ form.subject.label_tag }}
+    {{ form.subject }}
+</div>
+
+
+<form method="post" action="{% url 'add_book' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Save">
+</form>
